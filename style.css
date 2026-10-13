@@ -1,1 +1,40 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+h1 {
+    color: #333333;
+}
+
+.edificio {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.fachada {
+    width: 100%;
+    display: block;
+}
+
+.ventana {
+    position: absolute;
+    width: 12%;
+    height: 16%;
+    cursor: pointer;
+}
+
+.ventana img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ventana:hover img {
+    opacity: 1;
+}
